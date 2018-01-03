@@ -1,0 +1,579 @@
+html{
+    font-size: 100px;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Airal', serif;
+}
+body{
+    -webkit-user-select: none;
+    position: relative;
+    z-index: -3;
+}
+
+.swiper-container,.swiper-slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.face{
+    /*display: none;*/
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightcoral;
+}
+.face .circle div:nth-child(1){
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    left: -1rem;
+    top:-2rem;
+    background: url("../img/p1-s3.png") no-repeat center;
+    background-size: 100%;
+    /*animation: bounceInDown .75s linear  both;*/
+}
+.face .circle div:nth-child(2){
+     width: 8rem;
+     height: 8rem;
+     position: absolute;
+     left: 0rem;
+     top:-4rem;
+     background: url("../img/p1-s2.png") no-repeat center;
+     background-size: 100%;
+   /* animation: bounceInDown 1s linear  both;*/
+ }
+.face .circle div:nth-child(3){
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    right: -2rem;
+    top:-2rem;
+    background: url("../img/p1-s1.png") no-repeat center;
+    background-size: 100%;
+    /*animation: bounceInDown 1.25s linear  both;*/
+}
+.face .name{
+    font-size: .8rem;
+    color: #fff;
+    position: absolute;
+    left:2rem;
+    bottom: 4rem;
+    font-family: 'Airal', serif;
+    animation: bounceInUp 1s linear  both;;
+}
+
+.face .title .big1{
+    width: 3.5rem;
+    height: 3rem;
+    background: url("../img/p1-h1.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 7rem;
+    left: 2rem;
+    animation: flip 1s linear  both;
+
+
+
+}
+.face .title .big2{
+    width: 3.5rem;
+    height: 3rem;
+    background: url("../img/p1-h3.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 6rem;
+    right:2rem;
+    transition:3s;
+    animation: flip 1s linear  both;
+}
+
+.face .check a{
+   display: block;
+    width: 7rem;
+    height: 1.2rem;
+    border: 1px solid #fff;
+    border-radius: .08rem;
+    position: absolute;
+    left:1.5rem;
+    bottom: 1.5rem;
+    font-size: .6rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.2rem;
+    color: #fff;
+    font-family: 'Airal', serif;
+    animation: bounceIn 1.5s linear  both;
+}
+
+/*arrow*/
+.arrow{
+    position: absolute;
+    bottom: .2rem;
+    left:4.2rem;
+    z-index: 999;
+    animation: bounce 1.5s  .5s linear infinite;
+}
+.arrow img{
+    width: 1rem;
+    height: .7rem;
+}
+/*intro*/
+.intro{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightcoral;
+}
+
+.intro .h1{
+    font-size: .5rem;
+    color: #fff;
+    margin: 1.5rem auto;
+    margin-bottom: .5rem;
+    width: 2rem;
+    height: .8rem;
+}
+.intro .photo{
+    position: absolute;
+    left: 3.3rem;
+    top:2.8rem;
+
+}
+.intro .photo img{
+    width: 2.8rem;
+    height: 2.8rem;
+    border: .15rem solid #fff;
+    border-radius: 50%;
+
+}
+.intro .name1{
+    font-size: .7rem;
+    color: #fff;
+    position: absolute;
+    left: 3.8rem;
+    top:6rem;
+}
+
+.intro .content1{
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    left:0;
+    top:5rem;
+}
+.intro .content1 .phone{
+    position: absolute;
+    left: 1rem;
+    top:0;
+    width: 5rem;
+    height: 1.5rem;
+}
+.intro .content1 .phone img{
+    width: .7rem;
+    height: 1.3rem;
+    margin-right: .2rem;
+}
+.intro .content1 .phone span{
+    position: absolute;
+    bottom: .6rem;
+    font-size: .55rem;
+    color: #fff;
+}
+.intro .content1 .num{
+    font-size: .51rem;
+    color: #fff;
+    position: absolute;
+    left: 4.5rem;
+    top:1.2rem;
+}
+.intro .content1 .person{
+    position: absolute;
+    right: 1rem;
+    top:-.2rem;
+}
+.intro .content1 .person img{
+    width: 1.5rem;
+    height: 2rem;
+}
+/*content2*/
+.intro .content2{
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    left:0;
+    top:5.7rem;
+}
+.intro .content2 .phone{
+    position: absolute;
+    left: .8rem;
+    top:0;
+    width: 3rem;
+    height: 2rem;
+}
+.intro .content2 .phone img{
+    width: 1rem;
+    height: .8rem;
+    margin-right: .2rem;
+}
+.intro .content2 .phone span{
+    position: absolute;
+
+    font-size: .55rem;
+    color: #fff;
+}
+.intro .content2 .num{
+    font-size: .51rem;
+    color: #fff;
+    position: absolute;
+    left: 2.9rem;
+    top:1.2rem;
+}
+.intro .content2 .person{
+    position: absolute;
+    right: .2rem;
+}
+.intro .content2 .person img{
+    width: 2.5rem;
+    height: 1.5rem;
+}
+/*content3*/
+.intro .content3{
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    left:0;
+    top:6.5rem;
+}
+.intro .content3 .phone{
+    position: absolute;
+    left: .8rem;
+    top:0;
+    width: 3rem;
+    height: 2rem;
+}
+.intro .content3 .phone img{
+    width: 1rem;
+    height: .8rem;
+    margin-right: .2rem;
+}
+.intro .content3 .phone span{
+    position: absolute;
+    font-size: .55rem;
+    color: #fff;
+}
+.intro .content3 .num{
+    font-size: .51rem;
+    color: #fff;
+    position: absolute;
+    left: 4.3rem;
+    top:1.2rem;
+}
+.intro .content3 .person{
+    position: absolute;
+    right: .4rem;
+   top:-1rem;
+}
+.intro .content3 .person img{
+    width: 2rem;
+    height:3rem;
+}
+
+.experience{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightcoral;
+}
+
+.experience .h2{
+    font-size: .5rem;
+    color: #fff;
+    margin: 1.5rem auto;
+    margin-bottom: .5rem;
+    width: 2rem;
+    height: .8rem;
+}
+.experience .content4{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    left: 0;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.experience .line2{
+    position: absolute;
+    transform: rotate(90deg);
+    top:5.5rem;
+    left: 0rem;
+    width: 8.5rem;
+    height: 2rem;
+    background: url("../img/p3-line.png") no-repeat center;
+    background-size: 100% ;
+}
+.stu{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top:2rem;
+}
+.stu img{
+    width: 1.5rem;
+    height: 2rem;
+    position: absolute;
+    left: 1.5rem;
+    top:0;
+}
+.stu span{
+    font-size: .5rem;
+    color: #be8bff;
+    position: absolute;
+    right: 1.5rem;
+    top:1rem;
+}
+.book{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top:4rem;
+}
+.book img{
+    width: 2rem;
+    height: 1.8rem;
+    position: absolute;
+    left:1.2rem;
+    top:1.5rem;
+    transform: rotate(180deg);
+}
+.book span{
+    font-size: .5rem;
+    color:#be8bff;
+    position: absolute;
+    right: 1rem;
+    top:2rem;
+}
+.com {
+    width: 100%;
+    position: relative;
+    left:0rem;
+    top:8rem;
+}
+.com img{
+    width: 2rem;
+    height: 1.8rem;
+    position: absolute;
+    left:1.5rem;
+    top:1rem;
+}
+.com span{
+    font-size: .5rem;
+    color:  #be8bff;
+    position: absolute;
+    right: 1rem;
+    top:1.5rem;
+}
+/*work*/
+.work{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightcoral;
+}
+.work .mic{
+    position: absolute;
+    top:0;left: 0;
+    width: 3.5rem;
+    height: 4.2rem;
+    background: url("../img/p4-mic.png") no-repeat center;
+    background-size: 100%;
+    z-index: 10;
+}
+.work .pic{
+    width: 80%;
+    height:50%;
+   /* background-color: #00a300;*/
+    position: absolute;
+    left: 1rem;
+    top:3rem;
+    overflow: hidden;
+}
+.work .pic .loop{
+    width: 100%;
+    height: 100%;
+}
+.work .pic .loop img{
+    width: 100%;
+    height: 100%;
+}
+ .click .swiper-pagination-bullet{
+    width: 1rem;
+    height: .1rem;
+}
+.work .title{
+    font-size: .7rem;
+    color: #fff;
+    position: absolute;
+    left: 3.5rem;
+    bottom: 4.5rem;
+}
+.work .tree{
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    background: url("../img/p3-tree.png") no-repeat;
+    background-size: 100%;
+}
+/*skill*/
+.skill{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightcoral;
+}
+.skill .yeah{
+    width: 2rem;
+    height: 3rem;
+    background: url("../img/p5-yeah.png") no-repeat;
+    background-size: 100%;
+    margin:2rem auto;
+    margin-bottom: .15rem;
+}
+.skill .title2{
+    font-size: .5rem;
+    color: #fff;
+    margin: 0 auto;
+    width: 2rem;
+    height: .8rem;
+}
+.skill .ps1{
+    position: relative;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 8%;
+    margin-bottom: 1rem;
+}
+.skill .ps1 .p1{
+    position: absolute;
+    left:1rem;
+    top:1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.skill .ps1 .p2{
+    position: absolute;
+    left: 2.7rem;
+    top: 1.5rem;
+    width: 3.9rem;
+    height: .8rem;
+}
+.skill .ps1 .p3{
+    position: absolute;
+    right: 1.1rem;
+    top: 1.2rem;
+    width: 2.5rem;
+    height: 1.3rem;
+}
+.skill .ps1 .car1{
+    right: 1.5rem;
+}
+.skill .ps1 .car2{
+    right: 2rem;
+}
+.skill .p4{
+    background: url("../img/7dfd74675f6fd08422bfd2a6b8d96793.png") no-repeat;
+    background-size: 100%;
+    width: 5rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.call{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightcoral;
+}
+.call .title4{
+    font-size: .5rem;
+    color: #fff;
+    margin: 1.5rem auto;
+    margin-bottom: .5rem;
+    width: 2rem;
+    height: .8rem;
+}
+.call .title5{
+    font-size: .7rem;
+    color: #fff;
+    width: 2rem;
+    height: .8rem;
+}
+.call .position{
+    width: 100%;
+    margin-top: .1rem;
+    position: relative;
+}
+.call .position  .h3{
+    width: 3.2rem;
+    height: 1rem;
+    background-color: rgba(255,255,255,.3);
+    font-size: .5rem;
+    position: absolute;
+    top:0;
+    left: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.call .position  .h5{
+    width: 3.2rem;
+    height: 1rem;
+    background-color: rgba(255,255,255,.3);
+    font-size: .5rem;
+    position: absolute;
+    top:0;
+    right: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.call .position img{
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    right: 0;
+    top:-.5rem;
+}
+.call .desk{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.call .title5{
+    width: 4rem;
+    z-index: 1;
+    position: absolute;
+    bottom: 9rem;
+    right: 2.5rem;
+}
+.call .code{
+    z-index: 1;
+    position: absolute;
+    bottom: 4.7rem;
+    right: 2.3rem;
+}
+
+.music{
+    z-index: 999;
+    position: absolute;
+    right: 1rem;
+    top:1rem;
+}
+.music .btn img{
+    width: 1rem;
+    height: 1rem;
+}
